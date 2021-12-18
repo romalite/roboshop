@@ -27,3 +27,32 @@
 	text-decoration: none;
 	transition: scale(1.2);
 }
+#products{
+	background-color: tomato;
+	text-align: center;
+	height: 400px;
+	width: 500px;
+	flex-basis: 40rem;
+	border-radius: 1rem;
+}
+.products-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 70vh;
+}.products-img {
+	height: 200px;
+	width: 250px;
+}
+#sp{
+	text-align: center;
+}
+.products2{
+	background-color: tomato;
+	text-align: center;
+	height: 400px;
+	width: 500px;
+	flex-basis: 50rem;
+	border-radius: 1rem;
+	flex-direction: row;
+}
