@@ -14,6 +14,7 @@ let userRequest = new XMLHttpRequest();
 
 userRequest.open('GET', `${url}/users/${id}`);
 userRequest.responseType = 'json';
+userRequest.send();
 userRequest.onload = function() {
 	let user = userRequest.response;
 	profile.innerHTML =
@@ -28,12 +29,13 @@ userRequest.onload = function() {
 	`
 }
 
-userRequest.send();
+
 
 let productRequest = new XMLHttpRequest()
 productUser.open("GET",`${url}/products/${id}`)
 productUser.responseType = 'json'
 productsUser.send()
 productUser.onload =function () {
+	let product = productUser.response
 	console.log(product)
 }
