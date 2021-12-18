@@ -1,5 +1,7 @@
 const urlParams = new
 URLSearchParams(window.location.search);
+let url = 'https://my-json-server.typicode.com/RobocodeSchool/marketplace/products'
+let xhr = new XMLHttpRequest()
 
 const id = urlParams.get('id');
 
@@ -27,3 +29,11 @@ userRequest.onload = function() {
 }
 
 userRequest.send();
+
+let productRequest = new XMLHttpRequest()
+productUser.open("GET",`${url}/products/${id}`)
+productUser.responseType = 'json'
+productsUser.send()
+productUser.onload =function () {
+	console.log(product)
+}
